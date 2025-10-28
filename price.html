@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Basic Page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body class="bg-gray-100 font-sans">
+    <nav class="bg-[#1B1B1B] text-white w-full h-20 shadow-md">
+      <div class="max-w-6xl mx-auto px-4 h-full">
+        <div class="flex justify-between items-center h-full">
+          <a href="#">
+            <img
+              class="h-16"
+              src="assests/logo.png"
+              alt="Professional Mechanic Logo"
+            />
+          </a>
+
+          <ul class="hidden md:flex items-center space-x-8 text-sm">
+            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+
+            <li><a href="shop.html" class="hover:text-gray-300">Shop</a></li>
+            <li>
+              <a href="price.html" class="hover:text-gray-300">Pricing</a>
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-gray-300">About Us</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="md:hidden flex items-center"></div>
+        </div>
+      </div>
+
+      <div class="hidden md:hidden">
+        <ul class="bg-[#1b1b1b] pt-2 pb-4 space-y-2 px-4">
+          <li><a href="#" class="block p-2">Home</a></li>
+          <li><a href="#" class="block p-2">Services</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section
+      class="relative h-[80vh] flex items-center justify-center text-center px-4 sm:px-8 overflow-hidden"
+    >
+      <div class="absolute inset-0">
+        <img
+          class="w-full h-full object-cover"
+          src="assests/bannerpage.jpg"
+          alt="Mechanic shop background"
+        />
+        <div class="absolute inset-0 bg-black/50"></div>
+      </div>
+
+      <div class="relative z-10 max-w-2xl text-white">
+        <h1 class="font-bold text-4xl sm:text-5xl mb-4">
+          Mechanic is the Best for Your Business
+        </h1>
+        <p class="mb-6 text-lg sm:text-xl leading-relaxed">
+          Rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco.
+        </p>
+        <button
+          class="bg-[#DD9142] hover:[#DD9192] text-white font-semibold px-6 py-3 rounded-full transition"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+
+    <!-- ye pricing table mny bootstrap sy lya ha google sy ali hasnain write  -->
+
+    <div class="container py-5">
+      <div class="flex flex-col justify-center items-center text-center">
+        <h1 class="font-bold text-3xl md:text-4xl text-gray-900">
+          Pricing Deals
+        </h1>
+        <p class="mt-3 text-gray-600">
+          Rem ipsum dolor sit amet, consectetur adipisicing elit,
+          <br class="hidden md:block" />
+          sed do eiusmod tempor incididamco
+        </p>
+        <img class="mt-3 w-12 h-12" src="assests/tool.png" alt="Tool Icon" />
+      </div>
+
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <div class="pricing-card card h-100 p-4">
+            <div class="card-body text-center">
+              <h5 class="text-muted text-uppercase mb-3">Starter</h5>
+              <h2 class="display-4 fw-bold mb-4">$19</h2>
+              <p class="text-muted mb-4">Perfect for small businesses</p>
+              <ul class="list-unstyled feature-list mb-4">
+                <li>5 Team Members</li>
+                <li>10GB Storage</li>
+                <li>Basic Analytics</li>
+                <li>Email Support</li>
+              </ul>
+              <button class="btn btn-custom text-white w-100">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="pricing-card card h-100 p-4 border-2 border-[#DD9142]">
+            <span class="badge bg-[#DD9142] popular-badge">Popular</span>
+            <div class="card-body text-center">
+              <h5 class="text-[#DD9142] text-uppercase mb-3">Premium</h5>
+              <h2 class="display-4 fw-bold mb-4">$49</h2>
+              <p class="text-muted mb-4">Ideal for growing teams</p>
+              <ul class="list-unstyled feature-list mb-4">
+                <li>15 Team Members</li>
+                <li>50GB Storage</li>
+                <li>Advanced Analytics</li>
+                <li>24/7 Support</li>
+              </ul>
+              <button class="btn btn-custom text-white w-100">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="pricing-card card h-100 p-4">
+            <div class="card-body text-center">
+              <h5 class="text-muted text-uppercase mb-3">Enterprise</h5>
+              <h2 class="display-4 fw-bold mb-4">$99</h2>
+              <p class="text-muted mb-4">For large organizations</p>
+              <ul class="list-unstyled feature-list mb-4">
+                <li>Unlimited Members</li>
+                <li>500GB Storage</li>
+                <li>Custom Analytics</li>
+                <li>Priority Support</li>
+              </ul>
+              <button class="btn btn-custom text-white w-100">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="mt-10 px-4">
+      <div class="flex flex-col justify-center items-center text-center">
+        <h1 class="font-bold text-3xl md:text-4xl text-gray-900">
+          Satisfied Customers
+        </h1>
+        <p class="mt-3 text-gray-600">
+          Rem ipsum dolor sit amet, consectetur adipisicing elit,
+          <br class="hidden md:block" />
+          sed do eiusmod tempor incididamco
+        </p>
+        <img class="mt-3 w-12 h-12" src="assests/tool.png" alt="Tool Icon" />
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row gap-6 justify-center items-center mt-10"
+      >
+        <div
+          class="flex items-start gap-4 border border-gray-300 rounded-md p-6 w-full md:w-[45%] bg-white shadow-sm hover:shadow-md transition"
+        >
+          <img
+            class="h-16 w-16 rounded-full object-cover"
+            src="assests/testimonila-4.jpg"
+            alt="Customer Testimonial Profile"
+          />
+          <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            laboriosam amet cum repellendus nesciunt tenetur reprehenderit,
+            aperiam ut deserunt tempora eum minus.
+          </p>
+        </div>
+
+        <div
+          class="flex items-start gap-4 border border-gray-300 rounded-md p-6 w-full md:w-[45%] bg-white shadow-sm hover:shadow-md transition"
+        >
+          <img
+            class="h-16 w-16 rounded-full object-cover"
+            src="assests/testimonila-4.jpg"
+            alt="Customer Testimonial Profile"
+          />
+          <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            laboriosam amet cum repellendus nesciunt tenetur reprehenderit,
+            aperiam ut deserunt tempora eum minus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+this footer i also copy code from bootstrap Ali HASNAIN -->
+
+    <footer class="bg-dark footer">
+      <div class="footer-top py-12 mb-10 mt-16">
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-lg-8 pe-xxl-10">
+              <div class="row gy-5">
+                <div class="col-6 col-lg-4">
+                  <h5 class="text-white footer-title-01">A propos</h5>
+                  <ul class="list-unstyled footer-link-01 m-0">
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Our ingredients</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Our resellers</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <h5 class="text-white footer-title-01">About</h5>
+                  <ul class="list-unstyled footer-link-01 m-0">
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Customer Service</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Cookie Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Terms &amp; Conditions</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Terms of Use</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <h5 class="text-white footer-title-01">Need Help?</h5>
+                  <ul class="list-unstyled footer-link-01 m-0">
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Contact Us</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#">FAQs</a>
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Offers &amp; Kits</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Get the app</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Store locator</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="text-white footer-title-01 fs-5">
+                Subscribe to our newsletter and get 15% off your next order.
+              </h5>
+              <div>
+                <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
+                  <input
+                    type="email"
+                    class="form-control rounded border-0"
+                    placeholder="Your Email"
+                  />
+                  <button class="btn btn-secondary flex-shrink-0" type="submit">
+                    Subscribe
+                  </button>
+                </form>
+                <p class="fs-sm text-white text-opacity-75">
+                  I agree to receive Absolution newsletters
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer-bottom small py-3 border-top border-white border-opacity-10"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start py-1">
+              <p class="m-0 text-white text-opacity-75">
+                © 2022 copyright by
+                <a class="text-reset" href="#">iqbalautos.com </a>
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end py-1">
+              <ul
+                class="nav justify-content-center justify-content-md-end list-unstyled footer-link-01 m-0"
+              >
+                <li class="p-0 mx-3 ms-md-0 me-md-3">
+                  <a href="#" class="text-white text-opacity-75"
+                    >Privace &amp; Policy</a
+                  >
+                </li>
+                <li class="p-0 mx-3 ms-md-0 me-md-3">
+                  <a href="#" class="text-white text-opacity-75">Faq's</a>
+                </li>
+                <li class="p-0 mx-3 ms-md-0 me-md-3">
+                  <a href="#" class="text-white text-opacity-75">Get a Quote</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

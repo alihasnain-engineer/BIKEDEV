@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Basic Page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <nav class="bg-[#1B1B1B] text-white w-full h-20 shadow-md">
+      <div class="max-w-6xl mx-auto px-4 h-full">
+        <div class="flex justify-between items-center h-full">
+          <a href="#">
+            <img
+              class="h-16"
+              src="assests/logo.png"
+              alt="Professional Mechanic Logo"
+            />
+          </a>
+
+          <ul class="hidden md:flex items-center space-x-8 text-sm">
+            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+
+            <li><a href="shop.html" class="hover:text-gray-300">Shop</a></li>
+            <li>
+              <a href="price.html" class="hover:text-gray-300">Pricing</a>
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-gray-300">About Us</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="md:hidden flex items-center"></div>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="relative h-[60vh] flex items-center justify-center text-center px-4 sm:px-8 overflow-hidden"
+    >
+      <div class="absolute inset-0">
+        <img
+          class="w-full h-full object-cover"
+          src="assests/bannerpage.jpg"
+          alt="Mechanic shop background"
+        />
+        <div class="absolute inset-0 bg-black/50"></div>
+      </div>
+
+      <div class="relative z-10 max-w-2xl text-white">
+        <h1 class="font-bold text-4xl sm:text-5xl mb-4">
+          Mechanic is the Best for Your Business
+        </h1>
+        <p class="mb-6 text-lg sm:text-xl leading-relaxed">
+          Rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco.
+        </p>
+        <button
+          class="bg-[#DD9142] hover:[#DD9192] text-white font-semibold px-6 py-3 rounded-full transition"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+
+    <section
+      id="about-us"
+      class="flex flex-col md:flex-row w-full h-auto md:h-[700px] mt-20"
+    >
+      <div
+        class="md:w-1/2 bg-[#1C1C18] px-8 sm:px-10 md:px-20 py-16 flex flex-col justify-center"
+      >
+        <h2 class="text-4xl md:text-4xl font-extrabold text-white mb-4">
+          About Our Company
+        </h2>
+
+        <h3 class="text-gray-300 text-lg md:text-xl mb-6 leading-relaxed">
+          Rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt
+        </h3>
+
+        <img
+          src="assests/tool.png"
+          alt="Tools Icon"
+          class="w-[45px] h-[45px] mb-6"
+        />
+
+        <p class="text-gray-300 leading-7 text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div
+        class="md:w-1/2 h-[400px] md:h-[650px] relative order-first md:order-last"
+      >
+        <img
+          src="assests/aboutpersonimg.jpg"
+          alt="About Person"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </section>
+
+    <footer class="bg-dark footer">
+      <div class="footer-top py-12 mb-10 mt-16">
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-lg-8 pe-xxl-10">
+              <div class="row gy-5">
+                <div class="col-6 col-lg-4">
+                  <h5 class="text-white footer-title-01">A propos</h5>
+                  <ul class="list-unstyled footer-link-01 m-0">
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Our ingredients</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Our resellers</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <h5 class="text-white footer-title-01">About</h5>
+                  <ul class="list-unstyled footer-link-01 m-0">
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Customer Service</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Cookie Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Terms &amp; Conditions</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Terms of Use</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <h5 class="text-white footer-title-01">Need Help?</h5>
+                  <ul class="list-unstyled footer-link-01 m-0">
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Contact Us</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#">FAQs</a>
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Offers &amp; Kits</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Get the app</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Store locator</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="text-white footer-title-01 fs-5">
+                Subscribe to our newsletter and get 15% off your next order.
+              </h5>
+              <div>
+                <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
+                  <input
+                    type="email"
+                    class="form-control rounded border-0"
+                    placeholder="Your Email"
+                  />
+                  <button class="btn btn-secondary flex-shrink-0" type="submit">
+                    Subscribe
+                  </button>
+                </form>
+                <p class="fs-sm text-white text-opacity-75">
+                  I agree to receive Absolution newsletters
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer-bottom small py-3 border-top border-white border-opacity-10"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start py-1">
+              <p class="m-0 text-white text-opacity-75">
+                © 2022 copyright by
+                <a class="text-reset" href="#">iqbalautos.com </a>
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end py-1">
+              <ul
+                class="nav justify-content-center justify-content-md-end list-unstyled footer-link-01 m-0"
+              >
+                <li class="p-0 mx-3 ms-md-0 me-md-3">
+                  <a href="#" class="text-white text-opacity-75"
+                    >Privace &amp; Policy</a
+                  >
+                </li>
+                <li class="p-0 mx-3 ms-md-0 me-md-3">
+                  <a href="#" class="text-white text-opacity-75">Faq's</a>
+                </li>
+                <li class="p-0 mx-3 ms-md-0 me-md-3">
+                  <a href="#" class="text-white text-opacity-75">Get a Quote</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
